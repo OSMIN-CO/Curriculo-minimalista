@@ -69,11 +69,27 @@ body{
 
     #header-items-1 nav ol{
         display: none;
+        position:absolute;
+        flex-direction: column;
+        background-color:rgb(35, 52, 85);
+        top:5em;
+        right:0em;
+        width: 100%;
+        padding:1em;
     }
 
-    .menu-toggle{
+    #menu-toggle{
         display: block;
-    }    
+        cursor:pointer;
+    }  
+    
+    #header-ol.active{
+        display: flex;
+    }
+
+    #header-a{
+        margin:1em;
+    }
 }
 
 #container{
